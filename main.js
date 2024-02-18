@@ -21,3 +21,18 @@ let answer = [
   "Outlook not so good",
   "Very doubtful",
 ];
+
+// Shows the response when clicked
+let showResponse = function() {
+    // Generates a random index that correlates to a response
+    let index = Math.floor(Math.random() * response.length);
+    // Assigns a number to each answer in the array
+    let response = answer[index]
+    // Displays answer inside the magic 8 ball
+    let element = document.getElementById( 'circle' );
+    // Changing from none to inline-block unhides the element
+    element.style.display = 'inline-block';
+    // Shows answer within this element
+    element.innerHTML = '<br><br>' + answer;
+
+}

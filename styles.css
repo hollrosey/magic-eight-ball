@@ -1,0 +1,10 @@
+* {
+  font-family: "Exo 2", sans-serif;
+  font-optical-sizing: auto;
+  color: #f0f8ff;
+}
+
+body {
+    background-color: #000000;
+    text-align: center;
+}
