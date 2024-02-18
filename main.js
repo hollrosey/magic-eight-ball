@@ -22,18 +22,16 @@ let response = [
     "Very doubtful",
   ];
 
-// Function to go into the array and retrieve a response
-  let showResponse = function()
-  {
-// Creates random index that matches to answer in array
-    let index = Math.floor(Math.random() * response.length);
-// Goes into array and retrieves the corresponding response    
-    let answer = response[index];
-// Retrieves the HTML element that will contain the response text    
-    let circle = document.getElementById( 'eightBallResponses' );
-// Displays the background for the response by changing display CSS to none   
-    circle.style.display = 'inline-block';
-// Displays the text response from the eight ball   
-    circle.innerHTML = '<br><br>' + answer;
+  function showResponse() {
+    // Finds the DOM element for the response and stores in responseElement
+    let responseElement = document.getElementById('eightBallResponses');
+    // Changes the display in order to be able to see the response
+    responseElement.style.display = 'inline-block';
+    // Generates a random index to correspond with the response array
+    let randomIndex = Math.floor(Math.random() * response.length);
+    // Declares new variable for response text,
+    let responseText = `<br><br>${response[randomIndex]}`;
+    // Updates and returns the element's random response
+    responseElement.innerHTML = responseText;
   }
   
