@@ -27,6 +27,10 @@ h1, p,
   text-align: center;
 }
 
+h1 {
+  font-size: 50px;
+}
+
 button {
   background-image: linear-gradient(to right,#F1E697,#f4db5c);
   border: 0;
