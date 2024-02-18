@@ -29,9 +29,12 @@ let response = [
     responseElement.style.display = 'inline-block';
     // Generates a random index to correspond with the response array
     let randomIndex = Math.floor(Math.random() * response.length);
-    // Declares new variable for response text,
+    // Declares new variable for response text, combines adding new lines before response with string displaying random response
     let responseText = `<br><br>${response[randomIndex]}`;
     // Updates and returns the element's random response
     responseElement.innerHTML = responseText;
   }
+  
+
+
   
