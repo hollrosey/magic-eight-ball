@@ -1,46 +1,60 @@
 html {
   background-color: black;
-  background-image: radial-gradient(
-      white,
+  background-image: radial-gradient(white,
       rgba(255, 255, 255, 0.2) 2px,
-      transparent 40px
-    ),
+      transparent 40px),
     radial-gradient(white, rgba(255, 255, 255, 0.15) 1px, transparent 30px),
     radial-gradient(white, rgba(255, 255, 255, 0.1) 2px, transparent 40px),
-    radial-gradient(
-      rgba(255, 255, 255, 0.4),
+    radial-gradient(rgba(255, 255, 255, 0.4),
       rgba(255, 255, 255, 0.1) 2px,
-      transparent 30px
-    );
-    background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;
+      transparent 30px);
+  background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;
   background-size: 550px 550px, 350px 350px, 250px 250px, 150px 150px;
   font-family: "Exo 2", sans-serif;
   font-optical-sizing: auto;
 }
 
 .main-section {
-  max-width: 610px;
   margin: auto;
+  max-width: 610px;
 }
 
-h1,
-p,
+h1, p,
 .shake-button,
 .eight-ball {
+  color: #F1E697;
+  margin: 20px;
   text-align: center;
-  color: khaki;
-  margin: 5px;
 }
 
-#circle {
-  font-size: 14pt;
-  background-color: white;
+button {
+  background-image: linear-gradient(to right,#F1E697,#f4db5c);
+  border: 0;
+  border-radius: 2px;
   color: black;
-  position: absolute;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Exo 2", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  height: 46px;
+  line-height: 46px;
+  outline: 0;
+  padding: 0 10px;
+  text-align: center;
+}
+
+#eightBallResponses {
+  background-color: #f6f5e7;
+  border-radius: 50%;
+  color: #080808;
+  display: none;
+  font-size: 16pt;
+  font-family: "Exo 2", sans-serif;
+  font-weight: 500;
+  height: 150px;
   margin-left: 70px;
   margin-top: 70px;
-  height: 150px;
+  position: absolute;
   width: 150px;
-  border-radius: 50%;
-  display: none;
 }
