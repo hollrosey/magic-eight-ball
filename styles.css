@@ -1,10 +1,46 @@
-* {
+html {
+  background-color: black;
+  background-image: radial-gradient(
+      white,
+      rgba(255, 255, 255, 0.2) 2px,
+      transparent 40px
+    ),
+    radial-gradient(white, rgba(255, 255, 255, 0.15) 1px, transparent 30px),
+    radial-gradient(white, rgba(255, 255, 255, 0.1) 2px, transparent 40px),
+    radial-gradient(
+      rgba(255, 255, 255, 0.4),
+      rgba(255, 255, 255, 0.1) 2px,
+      transparent 30px
+    );
+    background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;
+  background-size: 550px 550px, 350px 350px, 250px 250px, 150px 150px;
   font-family: "Exo 2", sans-serif;
   font-optical-sizing: auto;
-  color: #f0f8ff;
 }
 
-body {
-    background-color: #000000;
-    text-align: center;
+.main-section {
+  max-width: 610px;
+  margin: auto;
+}
+
+h1,
+p,
+.shake-button,
+.eight-ball {
+  text-align: center;
+  color: khaki;
+  margin: 5px;
+}
+
+#circle {
+  font-size: 14pt;
+  background-color: white;
+  color: black;
+  position: absolute;
+  margin-left: 70px;
+  margin-top: 70px;
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  display: none;
 }

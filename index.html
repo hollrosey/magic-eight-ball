@@ -1,6 +1,6 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
+<html>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Magic 8 Ball</title>
@@ -8,16 +8,27 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-</head>
-<body>
-    <h1>Magic Eight Ball</h1>
-          <div id="answerButton"> 
-              <button class="button" type="button" onclick="displayAnswer()">Shake</button>
-          </div>
-          <div id="magicEightBall">
-            <div id="circle"></div>
-            <!-- 8 ball img here-->
-          </div>
-    <script src="main.js"></script>
-</body>
+    <link rel="icon" type="image/x-icon" href="magic-eight-ball.png">
+  </head>
+  <body>
+    <div class="main-section">
+      <h1 class="heading">Magic Eight Ball</h1>
+      <p>Ask me a yes or no question,<br> I can reveal the truth...</p>
+      <br>
+      <div class="shake-button"> 
+      	<button onclick="showResponse()">Shake</button>
+      </div>
+      <br>
+      <div class="eight-ball">
+        <div id="circle"></div>
+        <img src="magic-eight-ball.png"/>
+      </div>
+      <br>
+    </div>   
+   <script src="main.js"></script>
+  </body>
 </html>
+
+
+
+
